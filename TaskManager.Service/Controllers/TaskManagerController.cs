@@ -35,7 +35,7 @@ namespace TaskManager.Service.Controllers
         [HttpPost]
         public IHttpActionResult AddTask(TaskModel task)
         {
-            _manager.AddTask(task);
+           // _manager.AddTask(task);
             return Ok("Task added Successfully");
         }
         [Route("update")]
