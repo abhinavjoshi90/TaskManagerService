@@ -20,8 +20,8 @@ namespace TaskManager.Service.Controllers
         
         [Route("getall")]
         [HttpGet]
-        public IHttpActionResult GetAllTasks()
-        {
+        public IHttpActionResult GetAllTasks()   
+        {//add comments
             return Json<IEnumerable<TaskModel>>(_manager.GetAllTasks());
         }
 
